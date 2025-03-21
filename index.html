@@ -18,7 +18,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <style>
-      /* 全局文字间距调整 */
+
       body {
         position: relative;
         line-height: 1.8;
@@ -39,14 +39,14 @@
         width: 60px;
         margin: 20px auto;
       }
-      /* Masthead 使用原始背景图片设计，并加入轻微覆盖层增强文字可读性 */
+
       header.masthead {
         background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/img/bgmasthead.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
       }
-      /* 新增列表样式 */
+
       ul {
         list-style-type: disc;
         margin-left: 2rem;
@@ -64,10 +64,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item"><a class="nav-link" href="#homepage">Homepage</a></li>
-            <li class="nav-item"><a class="nav-link" href="#keynotes">Keynotes</a></li>
-            <li class="nav-item"><a class="nav-link" href="#panel">Panel Discussion</a></li>
+
+            <!-- <li class="nav-item"><a class="nav-link" href="#keynotes">Keynotes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#panel">Panel Discussion</a></li> -->
             <li class="nav-item"><a class="nav-link" href="#topics">Topics of Interest</a></li>
             <li class="nav-item"><a class="nav-link" href="#important-dates">Important Dates</a></li>
+            <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
             <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
           </ul>
         </div>
@@ -86,77 +88,16 @@
             <p class="text-white-75 mb-5">
               Guide-AI seeks to foster convergence between data management researchers and the broad Responsible AI researchers from neighboring communities like AI, Machine Learning, and Theoretical Computer Science. The workshop will publish both regular research papers (8 pages plus unlimited references) and short papers (up to 4 pages) addressing challenges, visionary ideas, and tools related to Responsible AI.
             </p>
-            <a class="btn btn-primary btn-xl" href="#keynotes">Learn More</a>
+
+            <a class="btn btn-primary btn-xl" href="#topics">Learn More</a>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Keynotes Section -->
-    <section id="keynotes">
-      <div class="container px-4 px-lg-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-center">
-            <h2 class="mt-0">Keynote Speakers</h2>
-            <hr class="divider" />
-          </div>
-        </div>
-        <!-- Keynote 1 -->
-        <div class="row gx-4 gx-lg-5">
-          <div class="col-lg-6">
-            <h3>Steven Whang</h3>
-            <h5>Title: Towards a Holistic Framework for Data-centric Responsible AI</h5>
-            <p>
-              Responsible AI is becoming critical as AI is widely used in our everyday lives. In this talk, Steven Whang overviews data-centric responsible AI research at KAIST, covering fairness techniques, robust training, privacy using disinformation, and explainability-first clustering.
-            </p>
-            <p><strong>Covered papers:</strong></p>
-            <ul>
-              <li>Roh et al., “FairBatch: Batch Selection for Model Fairness”, ICLR 2021</li>
-              <li>Zhang et al., “iFlipper: Label Flipping for Individual Fairness”, SIGMOD 2023</li>
-              <li>Tae et al., “Falcon: Fair Active Learning using Multi-armed Bandits”, VLDB 2024</li>
-              <li>Tae and Whang, “Slice Tuner: A Selective Data Acquisition Framework for Accurate and Fair ML Models”, SIGMOD 2021</li>
-              <li>Roh et al., “Sample Selection for Fair and Robust Training”, NeurIPS 2021</li>
-              <li>Heo and Whang, “Redactor: A Data-Centric Defense against Inference Attacks”, AAAI 2023</li>
-              <li>Hwang and Whang, “XClusters: Explainability-first Clustering”, AAAI 2023</li>
-            </ul>
-            <p><strong>Bio:</strong> Steven Euijong Whang is an associate professor at KAIST EE and AI, leading the Data Intelligence Lab. His research includes Responsible AI and Data-centric AI, and he has held positions at Google Research and served as an editor for various IEEE journals.</p>
-          </div>
-          <!-- Keynote 2 -->
-          <div class="col-lg-6">
-            <h3>Felix Naumann</h3>
-            <h5>Title: Data Quality in the Age of AI</h5>
-            <p>
-              Felix Naumann discusses the evolving notion of data quality in the context of AI. With increasing reliance on data-driven methods and recent regulations like the EU AI Act, data quality now encompasses aspects such as fairness, diversity, and explainability.
-            </p>
-            <p><strong>Bio:</strong> Felix Naumann studied at the University of Technology in Berlin and completed his PhD at Humboldt University. He is a professor at HPI, University of Potsdam, and has published over 200 scientific papers on data profiling, data quality, and data integration.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Panel Discussion Section -->
-    <section id="panel" class="bg-light">
-      <div class="container px-4 px-lg-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-center">
-            <h2 class="mt-0">Panel Discussion</h2>
-            <hr class="divider" />
-          </div>
-        </div>
-        <!-- Panel Discussion Content -->
-        <div class="row gx-4 gx-lg-5">
-          <div class="col-lg-12">
-            <h4>Session: The Role of Data Management Research for Responsible AI</h4>
-            <p>
-              <strong>Panelists:</strong> Steven Whang, Felix Naumann, Boris Glavic, Fatemeh Nargesian, Leopoldo Bertossi, Ziawasch Abedjan
-            </p>
-            <p>
-              In this panel, leading experts from both the data management and responsible AI communities discuss the challenges and opportunities for convergence. Topics include integrating data-centric methods with AI model development, identifying data challenges that hinder responsible AI, and exploring innovative solutions to foster cross-community collaboration.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- (Keynotes Section removed) -->
+    <!-- (Panel Discussion Section removed) -->
 
     <!-- Topics of Interest Section -->
     <section id="topics">
@@ -211,53 +152,35 @@
       </div>
     </section>
 
-    <!-- Schedule Section -->
+
+    <section id="organizers">
+      <div class="container px-4 px-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h2 class="mt-0">Organizers</h2>
+            <hr class="divider" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <ul>
+              <li>Babak Salimi (Website Chair)</li>
+              <li>Sainyam Galhotra (Website Chair)</li>
+              <li>Geyang Xu (Website Chair)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <section id="schedule">
       <div class="container px-4 px-lg-5">
         <div class="row justify-content-center">
           <div class="col-lg-10 text-center">
             <h2 class="mt-0">Schedule</h2>
             <hr class="divider" />
-          </div>
-        </div>
-        <!-- Schedule Details -->
-        <div class="row gx-4 gx-lg-5">
-          <div class="col-lg-12">
-            <h4>Date: Friday, June 14</h4>
-            <p><strong>Location:</strong> Antártica Room</p>
-            <h5>Session 1 (Chair: Abolfazl Asudeh)</h5>
-            <ul>
-              <li>8:30 AM - 8:35 AM: Opening Remarks</li>
-              <li>8:35 AM - 9:30 AM: Keynote 1 – Steven Whang</li>
-              <li>9:30 AM - 9:45 AM: Digging Up Threats to Validity – Anna Zeng (MIT), Michael Cafarella (MIT CSAIL)</li>
-              <li>9:45 AM - 10:00 AM: Press ECCS to Doubt – Markos Markakis (MIT), Ziyu Zhang (MIT), Rana Shahout (Harvard), Trinity Gao (MIT), Chunwei Liu (MIT), Ibrahim Sabek (USC), Michael Cafarella (MIT CSAIL) [Best Workshop Paper]</li>
-              <li>10:00 AM - 10:30 AM: Coffee Break</li>
-            </ul>
-            <h5>Session 2: Panel Discussion</h5>
-            <ul>
-              <li>10:30 AM - 12:00 PM: Panel – The Role of Data Management Research for Responsible AI</li>
-              <li>12:00 PM - 2:00 PM: Lunch</li>
-            </ul>
-            <h5>Session 3 (Chair: Sainyam Galhotra)</h5>
-            <ul>
-              <li>2:00 PM - 3:00 PM: Keynote 2 – Felix Naumann</li>
-              <li>3:00 PM - 3:15 PM: CMDBench: A Benchmark for Coarse-to-fine Multimodal Data Discovery – Yanlin Feng (Megagon Labs), Sajjadur Rahman (Megagon Labs), Aaron Feng (Megagon Labs), Shuwei Chen (Megagon Labs), Eser Kandogan (Megagon Labs)</li>
-              <li>3:15 PM - 3:30 PM: SET: Searching Effective Supervised Learning Augmentations – Jiaxiang Liu (Columbia), Zezhou Huang (Columbia), Eugene Wu (Columbia)</li>
-              <li>3:30 PM - 4:00 PM: Coffee Break</li>
-            </ul>
-            <h5>Session 4 (Chair: Babak Salimi)</h5>
-            <ul>
-              <li>4:00 PM - 4:15 PM: The Generalized Causal-Effect Score in Data Management – Leopoldo Bertossi (SKEMA Business School, Montreal)</li>
-              <li>4:15 PM - 4:30 PM: Disambiguate Entity Matching using LLMs through Relation Discovery – Zezhou Huang (Columbia)</li>
-              <li>4:30 PM - 4:45 PM: Threshold-Independent Fair Matching through Score Calibration – Mohammad Hossein Moslemi (University of Western Ontario), Mostafa Milani (University of Western Ontario)</li>
-              <li>4:45 PM - 5:00 PM: Cost-Effective LLM Utilization for ML Tasks over Tabular Data – Yael Einy (Tel Aviv University), Tova Milo (Tel Aviv University), Slava Novgorodov (Tel Aviv University)</li>
-              <li>5:00 PM - 5:15 PM: On Integrating the Data-Science and ML Pipelines for Responsible AI – Armin Esmaeilzadeh (UNLV), Joel Rorseth (University of Waterloo), Andy Yu (University of Waterloo), Parke Godfrey (York University), Lukasz Golab (University of Waterloo), Divesh Srivastava (AT&T), Jaroslaw Szlichta (York University & IBM CAS), Kazem Taghva (UNLV)</li>
-              <li>5:15 PM - 5:30 PM: Concluding Remarks</li>
-            </ul>
-            <h5>Recorded Presentation</h5>
-            <p>
-              TbExplain: A Text-Based Explanation Method for Scene Classification Models With the Statistical Prediction Correction – Amirhossein Aminimehr (Iran University of Science and Technology), Pouya Khani (Aarhus University), Amirali Molaei (Iran University of Science and Technology)
-            </p>
+            <p>Schedule will be announced soon.</p>
           </div>
         </div>
       </div>
