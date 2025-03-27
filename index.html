@@ -18,7 +18,6 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <style>
-
       body {
         position: relative;
         line-height: 1.8;
@@ -30,7 +29,6 @@
       h1, h2, h3, h4, h5 {
         margin-bottom: 1rem;
       }
-
       section {
         padding: 60px 0;
       }
@@ -39,7 +37,6 @@
         width: 60px;
         margin: 20px auto;
       }
-
       header.masthead {
         background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/img/bgmasthead.jpg');
         background-position: center;
@@ -61,14 +58,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <!-- 更新导航栏，新增 CFP、Author Guidelines、Submission Guidelines、Committee -->
+          <!-- Navigation updated with new modules -->
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item"><a class="nav-link" href="#homepage">Homepage</a></li>
             <li class="nav-item"><a class="nav-link" href="#cfp">Call for Papers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#topics">Topics of Interest</a></li>
             <li class="nav-item"><a class="nav-link" href="#author-guidelines">Author Guidelines</a></li>
             <li class="nav-item"><a class="nav-link" href="#submission-guidelines">Submission Guidelines</a></li>
             <li class="nav-item"><a class="nav-link" href="#committee">Committee</a></li>
-            <li class="nav-item"><a class="nav-link" href="#topics">Topics of Interest</a></li>
             <li class="nav-item"><a class="nav-link" href="#important-dates">Important Dates</a></li>
             <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
             <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
@@ -89,12 +86,16 @@
             <p class="text-white-75 mb-5">
               Guide-AI seeks to foster convergence between data management researchers and the broad Responsible AI researchers from neighboring communities like AI, Machine Learning, and Theoretical Computer Science. The workshop will publish both regular research papers (8 pages plus unlimited references) and short papers (up to 4 pages) addressing challenges, visionary ideas, and tools related to Responsible AI.
             </p>
-            <a class="btn btn-primary btn-xl" href="#topics">Learn More</a>
+            <p class="text-white-75 mb-5">
+              <strong>Note:</strong> This workshop is co-located with <a href="https://vldb.org/2025/" target="_blank" style="color: #fff; text-decoration: underline;">VLDB 2025</a> and will be held on September 5, 2025.
+            </p>
+            <a class="btn btn-primary btn-xl" href="#cfp">Learn More</a>
           </div>
         </div>
       </div>
     </header>
 
+    <!-- Call for Papers Section -->
     <section id="cfp">
       <div class="container px-4 px-lg-5">
         <div class="row justify-content-center">
@@ -102,64 +103,23 @@
             <h2 class="mt-0">Call for Papers</h2>
             <hr class="divider" />
             <p>
+              In light of recent advancements in data-driven technologies, AI is reshaping every aspect of human life and societies. Such a versatile impact of this double-edged sword necessitates a careful understanding and implementation of these technologies to minimize their harms while maximizing their benefits. The foundation of AI lies in data; hence any successful attempt would require a conscientious approach to data in order to effectively address the issues at the root.
+            </p>
+            <p>
+              This workshop is an attempt to fill the gap by giving special attention to GUIDE-AI, to govern, understand, and integrate data for effective and responsible AI. The workshop will provide a forum for community convergence, identifying challenges, and exploring visionary solutions.
+            </p>
+            <p>
               Submissions should be prepared using the ACM sigconf template and must adhere to a double-blind review process. Papers can be regular (up to 8 pages plus unlimited references) or short (up to 4 pages).
             </p>
             <p>
-              All submissions are managed via the CMT system. For further details, please visit the <a href="https://cmt3.research.microsoft.com/">CMT website</a>.
+              All submissions are managed via the CMT system. For further details, please visit the <a href="https://cmt3.research.microsoft.com/" target="_blank">CMT website</a>.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="author-guidelines">
-      <div class="container px-4 px-lg-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-center">
-            <h2 class="mt-0">Author Guidelines</h2>
-            <hr class="divider" />
-            <p>
-              Authors must prepare their manuscripts in accordance with the ACM sigconf format. Please ensure that the papers are anonymized to support the double-blind review process. Refer to the official guidelines for detailed formatting instructions.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="submission-guidelines">
-      <div class="container px-4 px-lg-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-center">
-            <h2 class="mt-0">Submission Guidelines</h2>
-            <hr class="divider" />
-            <p>
-              All submissions must be uploaded via the CMT system.
-            </p>
-            <p>
-              <strong>Where to submit:</strong> Please visit the CMT submission page <a href="https://cmt3.research.microsoft.com/">here</a>.
-            </p>
-            <p>
-              <strong>How to submit:</strong> Follow the instructions provided on the CMT platform. Upon submission, you will receive a confirmation email (CMT acknowledgment). Please retain this acknowledgment for your records.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="committee">
-      <div class="container px-4 px-lg-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-center">
-            <h2 class="mt-0">Committee</h2>
-            <hr class="divider" />
-            <p>
-              [Program Committee members will be announced soon.]
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Topics of Interest Section -->
     <section id="topics">
       <div class="container px-4 px-lg-5">
         <div class="row justify-content-center">
@@ -199,6 +159,58 @@
       </div>
     </section>
 
+    <!-- Author Guidelines Section -->
+    <section id="author-guidelines">
+      <div class="container px-4 px-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h2 class="mt-0">Author Guidelines</h2>
+            <hr class="divider" />
+            <p>
+              Authors must prepare their manuscripts in accordance with the ACM sigconf format. Please ensure that the papers are anonymized to support the double-blind review process. Refer to the official guidelines for detailed formatting instructions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Submission Guidelines Section -->
+    <section id="submission-guidelines">
+      <div class="container px-4 px-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h2 class="mt-0">Submission Guidelines</h2>
+            <hr class="divider" />
+            <p>
+              All submissions must be uploaded via the CMT system.
+            </p>
+            <p>
+              <strong>Where to submit:</strong> Please visit the CMT submission page <a href="https://cmt3.research.microsoft.com/" target="_blank">here</a>.
+            </p>
+            <p>
+              <strong>How to submit:</strong> Follow the instructions provided on the CMT platform. Upon submission, you will receive a confirmation email (CMT acknowledgment). Please retain this acknowledgment for your records.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Committee Section -->
+    <section id="committee">
+      <div class="container px-4 px-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h2 class="mt-0">Committee</h2>
+            <hr class="divider" />
+            <p>
+              [Program Committee members will be announced soon.]
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Important Dates Section -->
     <section id="important-dates">
       <div class="container px-4 px-lg-5">
         <div class="row justify-content-center">
@@ -220,7 +232,7 @@
       </div>
     </section>
 
-    <!-- Organizers Section (原有内容) -->
+    <!-- Organizers Section -->
     <section id="organizers">
       <div class="container px-4 px-lg-5">
         <div class="row justify-content-center">
@@ -231,19 +243,21 @@
         </div>
         <div class="row">
           <div class="col-lg-12 text-center">
-            <p>Babak Salimi</p>
-            <p>Sainyam Galhotra</p>
+            <p><a href="https://bsalimi.github.io/" target="_blank">Babak Salimi</a></p>
+            <p><a href="https://sainyamgalhotra.com/" target="_blank">Sainyam Galhotra</a></p>
           </div>
         </div>
+        <!-- Website Designer Section (updated) -->
         <div class="row justify-content-center mt-4">
           <div class="col-lg-10 text-center">
             <h4>Website Designer</h4>
-            <p>Geyang Xu</p>
+            <p><a href="https://albertgy9910.github.io/" target="_blank">Geyang Xu</a></p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Schedule Section (empty) -->
     <section id="schedule">
       <div class="container px-4 px-lg-5">
         <div class="row justify-content-center">
